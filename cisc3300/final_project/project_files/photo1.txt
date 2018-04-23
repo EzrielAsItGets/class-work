@@ -1,0 +1,80 @@
+function createImage(src)
+ {
+  const image = document.createElement('img');
+  
+image.src = src;
+ 
+ return image;
+}
+
+
+
+function onThumbnailClick(event) 
+{
+  const image = createImage(event.currentTarget.src);
+ 
+document.body.classList.add('no-scroll');
+  
+modalView.style.top = window.pageYOffset + 'px';
+ 
+ modalView.appendChild(image);
+  
+modalView.classList.remove('hidden');
+}
+
+
+
+
+function onModalClick() {
+  
+document.body.classList.remove('no-scroll');
+  
+modalView.classList.add('hidden');
+  
+modalView.innerHTML = '';
+}
+
+
+function movepicture() {
+  const inval = parseInt(document.getElementById("num2").value);
+
+  const image = createImage(PHOTO_LIST[inval]);
+ 
+document.body.classList.add('no-scroll');
+  
+modalView.style.top = window.pageYOffset + 'px';
+ 
+ modalView.appendChild(image);
+  
+modalView.classList.remove('hidden'); }
+
+
+/* Main
+
+const albumView = document.querySelector('#album-view');*/
+
+
+const albumView = document.querySelector('#album-view');
+  
+
+
+for (let i = 0; i < PHOTO_LIST.length; i++) 
+{
+  const photoSrc = PHOTO_LIST[i];
+ 
+ const image = createImage(photoSrc);
+ 
+ image.addEventListener('click', onThumbnailClick);
+
+  albumView.appendChild(image);
+}
+
+
+
+const modalView = document.querySelector('#modal-view');
+
+modalView.addEventListener('click', onModalClick);
+
+
+input1 =document.querySelector('#num1');
+input1.addEventListener("keypress", movepicture);

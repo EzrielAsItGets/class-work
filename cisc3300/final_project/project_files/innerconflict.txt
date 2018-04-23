@@ -1,0 +1,36 @@
+function onOuterClick() {
+  outer.classList.add('selected');
+  span1=document.querySelector('span');
+  span1.textContent ='Outer clicked!';
+}
+
+function onInnerClick() {
+  inner.classList.add('selected');
+ 
+  span1=document.querySelector('span');
+  span1.textContent ='Inner  clicked!';
+
+spanx1=document.querySelector(' #spanx');
+  spanx1.textContent ='Inner  clicked!';
+
+
+}
+
+function onResetClick() {
+  inner.classList.remove('selected');
+  outer.classList.remove('selected');
+   span1=document.querySelector('span');
+  span1.textContent ='reserve1';
+
+spanx1=document.querySelector(' #spanx');
+  spanx1.textContent ='reserve2';
+
+}
+
+const outer = document.querySelector('#outer');
+const inner = document.querySelector('#inner');
+outer.addEventListener('click', onOuterClick);
+inner.addEventListener('click', onInnerClick);
+
+const reset = document.querySelector('button');
+reset.addEventListener('click', onResetClick);
