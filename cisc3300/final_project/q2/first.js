@@ -12,6 +12,6 @@ function searchFunction() {
         output += word + ' ';
       }
     });
-    $('.main').html(output);
+    $('div').html(output);
   }
 }
