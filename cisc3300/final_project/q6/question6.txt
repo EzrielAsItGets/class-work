@@ -1,0 +1,23 @@
+<! DOCTYPE html>
+<html>
+  <head>
+     <title> First Illustration</title>
+	  <link rel="stylesheet" href="firstillex.css">
+    <script src="Q6.js" defer></script>
+  </head>
+     <body>
+<h4 class="class4">CS 193X: Web Fun</h4>
+<h4>CS 193X: Web Fun</h4>
+   <h1>CS 3300  WEB FUN</h1>
+    <div>
+      <p ><strong>Announcements</strong></br>
+       4/3: Homework 0 is out! Due Friday. </br>
+       4/3: Office hours are now posted.</p>
+            </br>
+
+       <a href="http://www.fordham.edu">View Syllabus</a>
+       </div>
+<input id="textarea" type="text"/>
+<button> Click me</button>
+     </body>
+</html>

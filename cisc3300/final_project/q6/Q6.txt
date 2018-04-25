@@ -1,0 +1,17 @@
+function myFunction1() {
+	text1 = document.getElementById("textarea").value;
+	pnew = document.querySelector('p');
+	pnew.textContent = text1;
+ 
+	if(i%2 == 0){
+		pnew .style.backgroundColor="lightblue";
+	}
+	else{
+		pnew.style.backgroundColor="lightgray";
+	}
+	i = i +1;
+}
+var i = 0;
+
+button1 = document.querySelector('button');
+button1.addEventListener('click', myFunction1);
