@@ -6,5 +6,4 @@ function highlightSearch() {
     document.getElementById("main").innerHTML = paragraphnew;
     var newparagraph = paragraphnew.replace(highlight, "<span>$1</span>");
     document.getElementById("main").innerHTML = newparagraph;
-
 }
