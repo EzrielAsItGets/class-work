@@ -4,8 +4,8 @@ function onClick() {
     div1.style.position = "fixed";
 	  div1.style.left = 50 + (i*10);
 	  div1.style.top = 50 + (i*10);
-	  div1.style.width = 400 - (i*10);
-	  div1.style.height = 400 -(i*10);
+	  div1.style.width = 400 - (i*20);
+	  div1.style.height = 400 -(i*20);
 	  body.appendChild(div1);
 	  if(i%2 > 0)
 		  div1.style.backgroundColor = (34,12,64);
