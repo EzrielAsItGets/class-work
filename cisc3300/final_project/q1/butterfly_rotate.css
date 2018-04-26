@@ -25,7 +25,7 @@ yy = yy + cy;
 function onClick( ) {
 
  image1 = document.querySelector('#img1');
- image2 =document.querySelector('#img2');
+ image2 = document.querySelector('#img2');
    
    pos = 100;
   
