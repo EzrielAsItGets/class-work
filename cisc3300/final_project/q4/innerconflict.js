@@ -1,3 +1,12 @@
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
 function onClick() {
   for(i = 1; i < 13; i++){
 	  div1 = document.createElement('div');
@@ -8,9 +17,9 @@ function onClick() {
 	  div1.style.height = 400 -(i*20);
 	  body.appendChild(div1);
 	  if(i%2 > 0)
-		  div1.style.backgroundColor = (34,12,64);
+		  div1.style.backgroundColor = getRandomColor();
 	  else
-		  div1.style.backgroundColor = (76,0,34);
+		  div1.style.backgroundColor = getRandomColor();
   }
 }
 button1 = document.querySelector('button');
