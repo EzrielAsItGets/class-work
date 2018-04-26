@@ -1,6 +1,7 @@
 function onClick() {
   for(i = 1; i < 13; i++){
 	  div1 = document.createElement('div');
+    div1.style.position = "fixed";
 	  div1.style.left = 50 + (i*10);
 	  div1.style.top = 50 + (i*10);
 	  div1.style.width = 400 - (i*10);
@@ -11,6 +12,6 @@ function onClick() {
 	  else
 		  div1.style.backgroundColor = (76,0,34);
   }
-}	
+}
 button1 = document.querySelector('button');
 	button1.addEventListener('click', onClick);
