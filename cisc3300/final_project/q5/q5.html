@@ -3,13 +3,13 @@
   <head>
 	<meta charset="utf-8">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<link rel="stylesheet" type="text/css" href="square14.css" >
-<script src = "java.js" defer> </script>
-<script src = "photo-list.js" defer> </script>
+<link rel="stylesheet" type="text/css" href="Question5.css" >
+<script src="Question5.js" type="application/javascript"> </script>
+<script src="Question5photos.js"> </script>
   <title>Squarespace layout</title>
   </head>
   <body>
-  	
+
   </head>
   <body>
 	<nav></nav>
@@ -19,16 +19,19 @@
   	<p></p>
   	<!-- Two column-type things -->
   	<div id="flex-container">
-    	<div class="col" onclick="first()" id="First"></div>
-    	<div class="col" onclick="second()" id="Second"></div>
-     	<div class="col" onclick="third()" id="Third"></div>
+    	<div class="col" id="First"></div>
+    	<div class="col" id="Second"></div>
+     	<div class="col" id="Third"></div>
   	</div>
+
+
 	</section>
 	<footer></footer>
   </body>
   <script>
-	//document.getElementbyId('First').addEventListener('click', first);
-	//document.getElementbyId('Second').addEventListener('click', second);
-	//document.getElementbyId('Third').addEventListener('click', third);
+  var buttonClass = new button("#flex-container")
+	//document.getElementById('First').addEventListener('click', buttonClass.first);
+	//document.getElementById('Second').addEventListener('click', buttonClass.second);
+	//document.getElementById('Third').addEventListener('click', buttonClass.third);
   </script>
 </html>
