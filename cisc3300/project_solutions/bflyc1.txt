@@ -1,0 +1,10 @@
+img {
+  height: 50px;
+  position:absolute;
+}
+
+
+
+
+.hidden{
+ display:none;}

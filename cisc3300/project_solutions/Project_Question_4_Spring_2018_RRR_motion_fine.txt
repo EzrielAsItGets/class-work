@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Innerconflict</title>
+
+<script src ="innerconflict_R_motion_fine.js"  defer></script>
+<link rel="stylesheet" type="text/css" href="roundel_1_RR_fine.css">
+  </head>
+  <body>
+
+  
+  
+  <img id ="img1" src="bfly1.gif"/></br>
+  <img id ="img2" src="bfly2.gif"/></br>
+
+  <button> Press here for change colors</button> </br></br>
+  <textarea id ="getvalue"></textarea> <span>  Enter the number of partitions for the square</span>
+  </body>
+</html>

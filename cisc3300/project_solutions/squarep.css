@@ -1,0 +1,55 @@
+
+
+nav {
+  background-color: royalblue;
+  height: 75px;
+  margin: 50px;
+}
+
+#flex-container {
+  display: flex;
+  justify-content: space-between;
+  height: 300px;
+ 
+} 
+
+#flex-container img{
+   height = 50px;
+  display: flex;
+ 
+}
+
+header {
+  background-color: lightskyblue;
+  height: 400px;
+  margin: 100px;
+}
+
+section {
+  background-color: gray;
+  margin: 75px 100px;
+  height:600px;
+  
+}
+
+footer {
+  background-color: black;
+  height: 100px;
+}
+
+p {
+  background-color: khaki;
+  height: 250px;
+  margin-bottom: 50px;}
+
+div.col {
+  background-color: tomato;
+  border: 2px solid black;
+  width: calc(30%);
+  display:flex;
+ justify-content: center;
+  align-items: center;
+
+}
+
+
