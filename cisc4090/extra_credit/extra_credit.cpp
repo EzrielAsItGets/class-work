@@ -11,6 +11,7 @@
 #include <iomanip>
 #include <vector>
 #include <limits>
+#include <algorithm>
 
 const int SIZE = 8; // Prevent users from entering an absurd value for DIST_INT for vector initialization.
 
@@ -31,7 +32,7 @@ int main() {
     user_input(DIST_INT, SUM);
     if (!valid_input(DIST_INT))
       cout << "\nThese values are invalid!\n";
-  } while(!valid_input(DIST_INT));
+  } while (!valid_input(DIST_INT));
 
   initialize_vector(vector, DIST_INT);
   print_vector(vector, DIST_INT);
@@ -66,13 +67,20 @@ bool valid_input(int a) {
 }
 
 void initialize_vector(vector<int> &v, int a) {
-  for (int i = 0; i < a; i++)
-    v.push_back((double) 9 * rand() / RAND_MAX);
+  int unique = 0;
+  vector<int>::iterator it;
+  for (int i = 0; i < a; i++) {
+    while (it != v.end()) {
+      unique = (double) 9 * rand() / RAND_MAX;
+      it = find(v.begin(), v.end(), unique);
+    }
+      v.push_back(unique);
+  }
 }
 
 void print_vector(vector<int> v, int a) {
   cout << "\nVector: ";
-  for (int i = 0; i < a; i++)
+  for (int i = 0; i < v.size(); i++)
     cout << setw(2) << v[i];
   cout << endl;
 }
