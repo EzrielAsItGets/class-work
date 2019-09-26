@@ -9,13 +9,16 @@ uses the first argument as a command and the remaining arguments as the
 arguments to the given command.
 */
 
+#include <iostream>
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <sys/types.h>
 #include <sys/wait.h>
 
-int main(int argc, char const *argv[]) {
+using namespace std;
+
+int main(int argc, char *argv[]) {
   char * ls_args[3] = {"ls", "-1", NULL};
   pid_t c_pid, pid;
   int status;
